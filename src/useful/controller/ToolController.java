@@ -15,6 +15,7 @@ public class ToolController
 	public ToolController()
 	{
 		donutList = new ArrayList<Donut>();
+		display = new PopupDisplay();
 	}
 	
 	// public void start grabs the start method in the package "ToolRunner"
@@ -23,5 +24,11 @@ public class ToolController
 		Donut temp = new Donut();
 		
 		donutList.add(temp);
+	}
+	
+	private void fillTheList()
+	{
+		Donut jellyFilled = new Donut("jelly filled");
+		
 	}
 }
