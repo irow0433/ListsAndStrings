@@ -7,5 +7,8 @@ public class ToolRunner
 		//Calls the constructor(public class ToolController)
 		ToolController myApp = new ToolController();
 		myApp.start();
+		{
+			
+		}
 	}
 }
