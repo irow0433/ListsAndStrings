@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 public class PopupDisplay 
 {
 	/**
-	 * Displays the supplied message in popup windo
+	 * Displays the supplied message in popup window
 	 * @param message the message that is displayed
 	 */
 	
@@ -20,7 +20,7 @@ public class PopupDisplay
 	}
 	
 	/**
-	 * Displays the suppplied question in a popup and returns the answer as a String
+	 * Displays the supplied question in a popup and returns the answer as a String
 	 * @param fromQuestion The question to ask the user
 	 * @return The String answer
 	 */
