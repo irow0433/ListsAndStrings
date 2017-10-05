@@ -1,14 +1,17 @@
 package useful.controller;
 
-public class ToolRunner 
+/**
+ * 
+ * autor Isaac.Rowlette
+ * 
+ */
+public class ToolRunner
 {
-	public static void main (String [] args)
-	{
-		//Calls the constructor(public class ToolController)
+	
+	public static void main(String[] args) {
+		//calls the constructor
 		ToolController myApp = new ToolController();
+		//runs start method
 		myApp.start();
-		{
-			
-		}
 	}
 }

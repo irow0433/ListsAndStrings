@@ -27,10 +27,30 @@ public class ToolController
 		fillTheList();
 		showTheList();
 	}
+	
 	private void showTheList()
 	{
-		for (int i = 0; i <= donutList.size(); i += 1)
+		String favorite = "Glazed donut";
+		for (int i = 0; i < donutList.size(); i += 1)
 		{
+			String currentFlavor = donutList.get(i).getFlavor();
+			
+			// flavor is calling the previous flavor so currently it doesn't have a variable or something to go back to
+			Donut currentDonut = donutList.get(i);
+			String flavor = currentDonut.getFlavor();
+			
+			
+			if (currentFlavor.equals(favorite))
+			{
+				for (int woop = 0; woop < 5; woop += 1)
+				{
+					display.displayText("The best FLAVOR EVER!!!");
+				}
+			}
+			for (int currentLetteri = 0; currentLetteri < currentFlavor.length(); i += 1)	
+			{
+				display.displayText(currentFlavor.substring(currentLetteri, currentLetteri + 1));
+			}
 			display.displayText(donutList.get(i).toString());
 		}
 	}
@@ -43,10 +63,10 @@ public class ToolController
 		Donut classic = new Donut("Classic");
 		Donut sugarPowder = new Donut("Sugar Powder");
 		
-		donutList.add(bleachDonut);
+		donutList.add(classic);
 		donutList.add(jellyFilled);
-		donutList.add(rustyNail);
-		donutList.add(springSmitch);
-		donutList.add(trashDonut);
+		donutList.add(sugarPowder);
+		donutList.add(Sprinkles);
+		donutList.add(glazed);
 	}
 }

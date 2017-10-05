@@ -20,6 +20,7 @@ public class Donut
 	
 	public Donut(String flavor)
 	{
+		this();
 		this.flavor = flavor;
 	}
 	
@@ -28,5 +29,22 @@ public class Donut
 		String description = "This donut is a " + flavor + " donut!";
 		
 		return description;
+	}
+	
+	//what is below? that is what getters and setters look like
+	public String getShape()
+	{
+		return shape;
+	}
+	
+	//void means your not getting something back
+	public void setShape(String shape)
+	{
+		this.shape = shape;
+	}
+	
+	public String getFlavor()
+	{
+		return flavor;
 	}
 }
