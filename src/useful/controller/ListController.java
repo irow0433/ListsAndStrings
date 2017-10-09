@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import useful.model.Donut;
 import useful.view.PopupDisplay;
 
-public class ToolController
+public class ListController
 {
 	//
 	private List<Donut> donutList;
 	private PopupDisplay display;
 	
-	public ToolController()
+	public ListController()
 	{
 		donutList = new ArrayList<Donut>();
 		display = new PopupDisplay();
@@ -94,8 +94,8 @@ public class ToolController
 		display.displayText("I will be telling what the size of the donut was though!");
 		display.displayText("This is the size of the donut...!!");
 		display.displayText("the donuts size was " + donutList.size());
-		display.displayText("but I will be giving you a donut back!!");
-		
+		display.displayText("your welcome!");
+	    
 		
 		
 		for(int i = 1; i < donutList.size(); i += 2)
@@ -111,6 +111,15 @@ public class ToolController
 		
 	}
 	
+	public ArrayList<Donut> getDonutList()
+	{
+		return(ArrayList<Donut>) donutList;
+	}
+	
+	public PopupDisplay getDisplay()
+	{
+		return display;
+	}
 
 
 }
