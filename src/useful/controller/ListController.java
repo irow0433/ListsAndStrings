@@ -95,6 +95,14 @@ public class ListController
 		display.displayText("This is the size of the donut...!!");
 		display.displayText("the donuts size was " + donutList.size());
 		display.displayText("your welcome!");
+		
+		display.displayText("I got a variety of donuts for you in thanks for the other donuts!");
+		display.displayText("But I will only be giving you the one donut back that I ate! oops!");
+		donutList.add(removed);
+		display.displayText("here they are!");
+		display.displayText(removed.getFlavor() + " is now given back.");
+		display.displayText("Now you know which donut I had eaten before!");
+		display.displayText("You  are very welcome!");
 	    
 		
 		
