@@ -25,7 +25,9 @@ public class ToolController
 		
 		donutList.add(temp);
 		fillTheList();
-		showTheList();
+		//showTheList();
+		//changeTheList();
+		practiceList();
 	}
 	
 	private void showTheList()
@@ -50,7 +52,7 @@ public class ToolController
 			for (int currentLetteri = 0; currentLetteri < currentFlavor.length(); i += 1)	
 			{
 				display.displayText(currentFlavor.substring(currentLetteri, currentLetteri + 1));
-			}
+		    }
 			display.displayText(donutList.get(i).toString());
 		}
 	}
@@ -69,4 +71,47 @@ public class ToolController
 		donutList.add(Sprinkles);
 		donutList.add(glazed);
 	}
+	
+	private void changeTheList()
+	{
+		display.displayText("The list is this big: " + donutList.size());
+		Donut removed = donutList.remove(0);
+		display.displayText(removed.getFlavor()+ "was removed from the last");
+		display.displayText("Now it is this big: " + donutList.size());
+		donutList.add(removed);
+		
+		display.displayText("The list is still: " +donutList.size() +" items.");
+		removed = donutList.set(3, new Donut());
+		display.displayText("The donut with flavorr " + removed.getFlavor() + " has been removed");
+	}
+	
+	private void practiceList()
+	{
+		display.displayText("Just so you know...");
+		Donut removed = donutList.remove(3);
+		display.displayText("I just ate one of your donuts! hahaha!!!");
+		display.displayText("I will not be telling you which donut I ate!!!");
+		display.displayText("I will be telling what the size of the donut was though!");
+		display.displayText("This is the size of the donut...!!");
+		display.displayText("the donuts size was " + donutList.size());
+		display.displayText("but I will be giving you a donut back!!");
+		
+		
+		
+		for(int i = 1; i < donutList.size(); i += 2)
+		{
+			String currentDonut = donutList.get(i).getFlavor();
+			
+			Donut presentDonut = donutList.get(i);
+			
+		}
+		
+		
+		
+		
+	}
+	
+
+
 }
+

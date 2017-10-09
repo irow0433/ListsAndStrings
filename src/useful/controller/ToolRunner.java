@@ -2,7 +2,7 @@ package useful.controller;
 
 /**
  * 
- * auhtor Isaac.Rowlette
+ * author Isaac.Rowlette
  * 
  */
 public class ToolRunner
